@@ -1,0 +1,1 @@
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":382,"versionName":"3.1.15.293","enabled":true,"outputFile":"NibiruStudioXRDemo_V3.1.15.293_2020-03-25-basic.apk","fullName":"basicDebug","baseName":"basic-debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.nibiru.studio.xrdemo","split":"","minSdkVersion":"19"}}]

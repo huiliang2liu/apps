@@ -1,0 +1,82 @@
+ext {
+    //cling
+    cling_core="org.fourthline.cling:cling-core:2.1.1"
+    cling_support="org.fourthline.cling:cling-support:2.1.1"
+    //event
+    eventbus="org.greenrobot:eventbus:3.0.0"
+    guava="com.google.guava:guava:28.1-jre"
+    //http
+    okhttp="com.squareup.okhttp3:okhttp:3.4.1"
+    volley="com.mcxiaoke.volley:library:1.0.19"
+    async="com.loopj.android:android-async-http:1.4.9"
+    //json
+    gson="com.google.code.gson:gson:2.6.2"
+    jackson="com.alibaba:fastjson:1.2.47"
+    jackson_core="com.fasterxml.jackson.core:jackson-core:2.9.6"
+    jackson_annotations="com.fasterxml.jackson.core:jackson-annotations:2.9.6"
+    jackson_databind="com.fasterxml.jackson.core:jackson-databind:2.9.6"
+    fastjson="com.alibaba:fastjson:1.2.47"
+    logansquare="com.bluelinelabs:logansquare:1.3.7"
+    logansquare_compile="com.bluelinelabs:logansquare-compiler:1.3.7"
+    //image
+    picasso="com.squareup.picasso:picasso:2.71828"
+    imageloader="com.nostra13.universalimageloader:universal-image-loader:1.9.3"
+    glide="com.github.bumptech.glide:glide:3.7.0"
+    glide_transformations="jp.wasabeef:glide-transformations:2.0.0"
+    //media
+    ijkplayer_java="tv.danmaku.ijk.media:ijkplayer-java:0.8.8"
+    ijkplayer_armv7a="tv.danmaku.ijk.media:ijkplayer-armv7a:0.8.8"
+    ijkplayer_exo="tv.danmaku.ijk.media:ijkplayer-exo:0.8.8"
+    ijkplayer_armv5="tv.danmaku.ijk.media:ijkplayer-armv5:0.8.8"
+    ijkplayer_arm64="tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8"
+    ijkplayer_x86="tv.danmaku.ijk.media:ijkplayer-x86:0.8.8"
+    ijkplayer_x86_64="tv.danmaku.ijk.media:ijkplayer-x86_64:0.8.8"
+
+    recyclerview="androidx.recyclerview:recyclerview:1.0.0"
+    appcompat="androidx.appcompat:appcompat:1.0.0"
+    constraintlayout="androidx.constraintlayout:constraintlayout:1.1.3"
+    //butterknife
+    butterknife="com.jakewharton:butterknife:10.2.0"
+    butterknife_compiler="com.jakewharton:butterknife-compiler:10.2.0"
+
+    //数据库
+    green_dao="org.greenrobot:greendao:3.2.2"
+    green_dao_plug="org.greenrobot:greendao-gradle-plugin:3.2.2"
+    leak_canary="com.squareup.leakcanary:leakcanary-android:1.6.1"
+    leak_canary_no="com.squareup.leakcanary:leakcanary-android-no-op:1.6.1"
+
+
+    //Android SDK/Tools Version
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.0'
+    //The MinSdkVersion of the product you can add like this: externalSVideoMinSdkVersion 15
+    minSdkVersion = 15
+    playerMinSdkVersion = 16
+    liveMinSdkVersion = 18
+    targetSdkVersion = 28
+    config={
+        storeFile file('签名文件地址')//签名文件地址
+        keyAlias "别名"//别名
+        storePassword "密钥"
+        keyPassword "密钥"
+        v1SigningEnabled true//是否使用v1签名
+        v2SigningEnabled false//是否使用v2签名
+    }
+
+    compileOptions ={
+
+        sourceCompatibility JavaVersion.VERSION_1_8
+
+        targetCompatibility JavaVersion.VERSION_1_8
+
+    }
+    apacheLibrary="org.apache.http.legacy"
+    tvbus="implementation 'com.google.android.exoplayer:exoplayer:2.9.3'"
+
+
+    //three login
+
+    weixinLogin= 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    um_analytics="com.umeng.umsdk:analytics:8.0.0"
+    um_commom="com.umeng.umsdk:common:2.0.0"
+}

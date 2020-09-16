@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/tv_search"
+        android:layout_width="300dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/search_bg">
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="19dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/search">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/sp12"
+            android:textColor="@color/color3"
+            android:text="@string/default_search"
+            android:layout_marginLeft="44dp" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/tv_more"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right|top"
+        android:padding="15dp"
+        android:src="@mipmap/more"></ImageView>
+
+    <ImageView
+        android:id="@+id/tv_history"
+        android:layout_width="48dp"
+        android:layout_height="28dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="13dp"
+        android:paddingTop="3dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="3dp"
+        android:src="@mipmap/history"></ImageView>
+
+    <com.base.widget.RecyclerView
+        android:id="@+id/tv_tab_rv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="50dp"
+        app:direction="horizontal"
+        app:lineColor="@color/transparent">
+
+    </com.base.widget.RecyclerView>
+
+    <com.base.widget.ViewPager
+        android:id="@+id/tv_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="108dp"
+        app:scroll="false"></com.base.widget.ViewPager>
+</FrameLayout>

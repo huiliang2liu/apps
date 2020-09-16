@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WrapLayout">
+        <attr name="wlyHorizontalSpacing" format="dimension" />
+        <attr name="wlyVerticalSpacing" format="dimension" />
+        <attr name="wlyGravity" format="enum">
+            <enum name="top" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="WrapLayout_Layout">
+        <attr name="wlyLayout_gravity" format="enum">
+            <enum name="top" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="ViewPager">
+        <attr name="scroll" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RecyclerView">
+        <attr name="direction" format="enum">
+            <enum name="vertical" value="0" />
+            <enum name="horizontal" value="1" />
+            <enum name="gridVertical" value="2" />
+            <enum name="gridHorizontal" value="3" />
+            <enum name="staggeredVertical" value="4" />
+            <enum name="staggeredHorizontal" value="5" />
+            <enum name="card" value="6" />
+            <enum name="looper" value="7" />
+        </attr>
+        <attr name="count" format="integer" />
+        <attr name="line" format="dimension" />
+        <attr name="lineHeight" format="dimension" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="reference" />
+        <attr name="lineVerticalColor" format="reference" />
+        <attr name="lineHorizontalColor" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ImageView">
+        <attr name="defaultId" format="reference" />
+        <attr name="errorId" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="ShufflingView">
+        <attr name="shufflingPageMargin" format="dimension"></attr>
+        <attr name="shufflingIntervalLift" format="dimension"></attr>
+        <attr name="shufflingIntervalRight" format="dimension"></attr>
+        <attr name="shufflingScale" format="float"></attr>
+        <attr name="shufflingAlpha" format="float"></attr>
+    </declare-styleable>
+    <declare-styleable name="MaterialRefreshLayout">
+        <attr name="overlay" format="boolean" />
+        <!-- style for MaterialWaveView  -->
+        <attr name="wave_height_type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="higher" value="1" />
+        </attr>
+        <attr name="wave_color" format="color" />
+        <attr name="wave_show" format="boolean" />
+        <!-- style for CircleProgressBar  -->
+        <attr name="progress_colors" format="reference" />
+        <attr name="progress_stoke_width" format="dimension" />
+        <attr name="progress_backgroud_color" format="color" />
+        <attr name="progress_show_arrow" format="boolean" />
+        <attr name="progress_arrow_width" format="dimension" />
+        <attr name="progress_arrow_height" format="dimension" />
+        <attr name="progress_show_circle_backgroud" format="boolean" />
+        <attr name="progress_value" format="integer" />
+        <attr name="progress_max_value" format="integer" />
+        <attr name="progress_text_size" format="dimension" />
+        <attr name="progress_text_color" format="color" />
+        <attr name="progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+        <attr name="progress_size_type" format="enum">
+            <enum name="normal" value="0"></enum>
+            <enum name="big" value="1"></enum>
+        </attr>
+        <attr name="isLoadMore" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="CircleProgressBar">
+        <attr name="mlpb_inner_radius" format="dimension" />
+        <attr name="mlpb_background_color" format="color" />
+        <attr name="mlpb_progress_color" format="color" />
+        <attr name="mlpb_progress_stoke_width" format="dimension" />
+        <attr name="mlpb_show_arrow" format="boolean" />
+        <attr name="mlpb_enable_circle_background" format="boolean" />
+        <attr name="mlpb_arrow_width" format="dimension" />
+        <attr name="mlpb_arrow_height" format="dimension" />
+
+        <attr name="mlpb_progress" format="integer" />
+        <attr name="mlpb_max" format="integer" />
+
+
+        <attr name="mlpb_progress_text_size" format="dimension" />
+        <attr name="mlpb_progress_text_color" format="color" />
+
+        <!--<attr name="mlpb_progress_text_offset" format="dimension"/>-->
+
+        <attr name="mlpb_progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RefreshView">
+        <attr name="loadHeight" format="dimension"></attr>
+        <attr name="waveHeight" format="dimension"></attr>
+        <attr name="waveColor" format="reference"></attr>
+        <attr name="headerLayout" format="reference"></attr>
+        <attr name="footerLayout" format="reference"></attr>
+        <attr name="embed" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="CalendarView">
+        <attr name="calendar_month" format="enum">
+            <enum name="jan" value="1" />
+            <enum name="feb" value="2" />
+            <enum name="mar" value="3" />
+            <enum name="apr" value="4" />
+            <enum name="may" value="5" />
+            <enum name="jun" value="6" />
+            <enum name="jul" value="7" />
+            <enum name="aug" value="8" />
+            <enum name="sep" value="9" />
+            <enum name="oct" value="10" />
+            <enum name="nov" value="11" />
+            <enum name="dec" value="12" />
+        </attr>
+        <attr name="calendar_year" format="integer" />
+        <attr name="calendar_item_height" format="dimension" />
+        <attr name="calendar_item_width" format="dimension" />
+        <attr name="calendar_line" format="dimension" />
+        <attr name="calendar_line_color" format="reference" />
+        <attr name="calendar_week_drawable" format="reference" />
+        <attr name="calendar_week_color" format="reference" />
+        <attr name="calendar_text_select_drawable" format="reference" />
+        <attr name="calendar_text_drawable" format="reference" />
+        <attr name="calendar_text_select_color" format="reference" />
+        <attr name="calendar_text_color" format="reference" />
+        <attr name="calendar_othe_text_color" format="reference" />
+        <attr name="calendar_week_size" format="dimension" />
+        <attr name="calendar_day_size" format="dimension" />
+        <attr name="calendar_week_typeface" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="bold_italic" value="3" />
+        </attr>
+        <attr name="calendar_day_typeface" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="bold_italic" value="3" />
+        </attr>
+        <attr name="calendar_day_select_typeface" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+            <enum name="italic" value="2" />
+            <enum name="bold_italic" value="3" />
+        </attr>
+    </declare-styleable>
+</resources>

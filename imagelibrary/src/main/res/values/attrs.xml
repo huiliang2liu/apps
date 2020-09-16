@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageView">
+        <attr name="transform" format="enum">
+            <enum name="circleTransform" value="0"></enum>
+            <enum name="discolorationTransform" value="1"></enum>
+            <enum name="filmTransform" value="2"></enum>
+            <enum name="fuzzyTransform" value="3"></enum>
+            <enum name="heartTransform" value="4"></enum>
+            <enum name="highDegreeSaturationTransform" value="5"></enum>
+            <enum name="iceTransform" value="6"></enum>
+            <enum name="lomoFilterTransform" value="7"></enum>
+            <enum name="nostalgiaTransform" value="8"></enum>
+            <enum name="oldTimeFilterTransform" value="9"></enum>
+            <enum name="polygonTransfrom" value="10"></enum>
+            <enum name="reflectionTransform" value="11"></enum>
+            <enum name="reliefTransform" value="12"></enum>
+            <enum name="rotateTransform" value="13"></enum>
+            <enum name="roundTransform" value="14"></enum>
+            <enum name="sharpenTransform" value="15"></enum>
+            <enum name="sketchTransform" value="16"></enum>
+            <enum name="starTransform" value="17"></enum>
+            <enum name="sunshineTransform" value="18"></enum>
+            <enum name="warmthFilterTransform" value="19"></enum>
+        </attr>
+        <attr name="polygon" format="integer" />
+        <attr name="rotateDegree" format="float" />
+        <attr name="roundRx" format="dimension" />
+        <attr name="roundRy" format="dimension" />
+        <attr name="sunShineLigthX" format="dimension" />
+        <attr name="sunShineLigthY" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="GifTextureView">
+        <attr name="gifSource" format="reference|string"/>
+        <attr name="isOpaque" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="GifView">
+        <attr name="freezesAnimation" format="boolean"/>
+        <attr name="loopCount" format="integer"/>
+    </declare-styleable>
+</resources>

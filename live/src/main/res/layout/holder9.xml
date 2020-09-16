@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="380dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp">
+
+        <TextView
+            android:id="@+id/holder9_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:text="@string/next"
+            android:textColor="@color/color2"
+            android:textSize="@dimen/sp18"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/holder9_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/next"
+            android:textColor="@color/color1"
+            android:textSize="@dimen/sp14" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp">
+
+            <com.base.widget.ImageView
+                android:id="@+id/holder9_iv1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:roundRx="5dp"
+                app:roundRy="5dp"
+                app:transform="roundTransform" />
+            <TextView
+                android:id="@+id/holder9_title1"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="108dp"
+                android:layout_marginLeft="1dp"
+                android:text="@string/next"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/color2"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/holder9_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/color3"
+                android:text="@string/next"
+                android:layout_marginTop="130dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp">
+
+            <com.base.widget.ImageView
+                android:id="@+id/holder9_iv2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:roundRx="5dp"
+                app:roundRy="5dp"
+                app:transform="roundTransform" />
+            <TextView
+                android:id="@+id/holder9_title2"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="108dp"
+                android:layout_marginLeft="1dp"
+                android:text="@string/next"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/color2"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/holder9_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/color3"
+                android:text="@string/next"
+                android:layout_marginTop="130dp"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp">
+
+            <com.base.widget.ImageView
+                android:id="@+id/holder9_iv3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:roundRx="5dp"
+                app:roundRy="5dp"
+                app:transform="roundTransform" />
+            <TextView
+                android:id="@+id/holder9_title3"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="108dp"
+                android:layout_marginLeft="1dp"
+                android:text="@string/next"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/color2"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/holder9_type3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/color3"
+                android:text="@string/next"
+                android:layout_marginTop="130dp"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="5dp">
+
+            <com.base.widget.ImageView
+                android:id="@+id/holder9_iv4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:roundRx="5dp"
+                app:roundRy="5dp"
+                app:transform="roundTransform" />
+            <TextView
+                android:id="@+id/holder9_title4"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="108dp"
+                android:layout_marginLeft="1dp"
+                android:text="@string/next"
+                android:textSize="@dimen/sp16"
+                android:textColor="@color/color2"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/holder9_type4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:textSize="@dimen/sp14"
+                android:textColor="@color/color3"
+                android:text="@string/next"
+                android:layout_marginTop="130dp"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

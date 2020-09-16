@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="111dp">
+
+    <com.base.widget.ImageView
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        app:roundRx="5dp"
+        app:roundRy="5dp"
+        app:transform="roundTransform"
+        android:layout_marginTop="10dp"
+        android:id="@+id/holder16_iv"/>
+<TextView
+    android:layout_marginRight="17dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:maxLines="2"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="150dp"
+    android:textSize="@dimen/sp18"
+    android:id="@+id/holder16_title"
+    android:text="@string/next"
+    android:textColor="@color/color2"/>
+    <TextView
+        android:id="@+id/holder16_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="152dp"
+        android:layout_marginBottom="14dp"
+        android:layout_gravity="bottom"
+        android:textSize="@dimen/sp14"
+        android:text="@string/next"
+        android:textColor="@color/color3"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color17"
+        android:layout_gravity="bottom"/>
+</FrameLayout>

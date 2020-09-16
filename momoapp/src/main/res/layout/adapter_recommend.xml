@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp">
+
+        <ImageView
+            android:id="@+id/recommend_iv"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/recommend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="100dp"
+            android:text="name"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/recommend_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="70dp"
+            android:textColor="#afffffff"
+            android:text="city"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/recommend_bg"
+            >
+            <ImageView
+                android:layout_width="10dp"
+                android:id="@+id/recommend_sex"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="10dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#ffffff"
+                android:text="24"
+                android:id="@+id/recommend_age"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="30dp"
+            android:gravity="center"
+            android:id="@+id/recommend_previous"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/recommend_previous_bg"
+            android:layout_height="30dp">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/previous_right"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

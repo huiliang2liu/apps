@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">accessibilityLibrary</string>
+    <string name="accessibility_service_description">智能服务</string>
+</resources>

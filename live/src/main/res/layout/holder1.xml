@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <FrameLayout
+        android:id="@+id/holder_hot_fl"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/hot_list_bg"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/today_hot_list"
+            android:textColor="@color/color5"
+            android:layout_marginTop="21dp"/>
+
+        <TextView
+            android:id="@+id/holder_recommend2_tv"
+            android:textSize="12sp"
+            android:textColor="@color/color6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:text="@string/show_name"
+            android:layout_marginTop="38dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/hot_list"
+            android:layout_marginRight="15dp"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/holder_gold_fl"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:background="@drawable/my_gold_bg"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:text="@string/my_gold"
+            android:textColor="@color/color7"
+            android:layout_marginTop="21dp"/>
+
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/color8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="11dp"
+            android:text="@string/gold_expire"
+            android:layout_marginTop="38dp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@mipmap/gold"
+            android:layout_marginRight="15dp"/>
+    </FrameLayout>
+</LinearLayout>

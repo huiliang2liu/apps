@@ -1,0 +1,17 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.io">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--android8.0安装应用需要-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <application >
+        <provider
+            android:authorities="${applicationId}.com.io.FileProvider"
+            android:name=".provider.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            >
+        </provider>
+    </application>
+</manifest>

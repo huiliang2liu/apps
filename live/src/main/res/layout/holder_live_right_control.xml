@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="50dp">
+
+    <TextView
+        android:id="@+id/holder_live_right_control_tv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/color13"
+        android:textSize="@dimen/sp16" />
+</LinearLayout>

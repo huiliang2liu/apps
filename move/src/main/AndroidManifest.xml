@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.move">
+    <supports-screens android:anyDensity="true"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.REAL_GET_TASKS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SET_DEBUG_APP"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-feature android:name="android.hardware.wifi"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <permission android:name="com.le123.ysdq.permission.MIPUSH_RECEIVE" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL"/>
+    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    <uses-permission android:name="com.le123.ysdq.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="getui.permission.GetuiService.com.le123.ysdq"/>
+    <permission android:name="getui.permission.GetuiService.com.le123.ysdq" android:protectionLevel="normal"/>
+    <permission android:name="com.le123.ysdq.push.permission.MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="com.le123.ysdq.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE"/>
+    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE"/>
+    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.le123.ysdq.push.permission.MESSAGE"/>
+    <uses-permission android:name="com.le123.ysdq.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="com.asus.msa.SupplementaryDID.ACCESS"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.max_aspect" android:value="2.4"/>
+        <meta-data android:name="vivo_ad_version_code" android:value="3201"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="2d8dcd1ba0d6e9abb9037cae3bd92fba"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="5c174617b465f52a800000e6"/>
+        <meta-data android:name="UMENG_MESSAGE_SECRET" android:value="562faf891d3f7a068744f7614df8ea80"/>
+        <meta-data android:name="TencentMapSDK" android:value="NFABZ-2E7W4-LIFU5-DH3D6-HPNH3-P4B2X"/>
+        <meta-data android:name="com.elinkway.infinitemovies.glideproxy.CustomImageSizeGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="PUSH_APPID" android:value="BOcdVxUf7F8bVYkH2f6bP6"/>
+        <meta-data android:name="PUSH_APPKEY" android:value="8gMVCpqm1o6rUfCpybg5R6"/>
+        <meta-data android:name="PUSH_APPSECRET" android:value="MejZqP67yq8PvVK62ElR32"/>
+        <meta-data android:name="MIPUSH_APPID" android:value="XM_2882303761517186477"/>
+        <meta-data android:name="MIPUSH_APPKEY" android:value="XM_5651718637477"/>
+        <meta-data android:name="MEIZUPUSH_APPID" android:value="MZ_110863"/>
+        <meta-data android:name="MEIZUPUSH_APPKEY" android:value="MZ_4ff95cd4942142c5813c49a6e7aec336"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="100200807"/>
+        <meta-data android:name="OPPOPUSH_APPKEY" android:value="OP_33QAp3gm8OG04gksCS44cwsgo"/>
+        <meta-data android:name="OPPOPUSH_APPSECRET" android:value="OP_a281e9d1bf62e4A8908f1dE14e5e4539"/>
+        <meta-data android:name="YSDQ_INSTALL_CHANNEL" android:value="huawei"/>
+    </application>
+
+</manifest>

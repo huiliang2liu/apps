@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <com.live.widget.MainButtonView
+            android:id="@+id/main_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:button_text="@string/home"
+            app:defaultImage="@mipmap/home_default"
+            app:defaultTextColor="@color/color2"
+            app:selectImage="@mipmap/home_select"
+            app:selectTextColor="@color/color1"></com.live.widget.MainButtonView>
+
+        <com.live.widget.MainButtonView
+            android:id="@+id/main_nice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:button_text="@string/live"
+            app:defaultImage="@mipmap/live_default"
+            app:defaultTextColor="@color/color2"
+            app:selectImage="@mipmap/live_select"
+            app:selectTextColor="@color/color1"></com.live.widget.MainButtonView>
+
+        <com.live.widget.MainButtonView
+            android:id="@+id/main_remote_control"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:button_text="@string/hot"
+            app:defaultImage="@mipmap/hot_default"
+            app:defaultTextColor="@color/color2"
+            app:selectImage="@mipmap/hot_select"
+            app:selectTextColor="@color/color1"></com.live.widget.MainButtonView>
+
+
+        <com.live.widget.MainButtonView
+            android:id="@+id/main_my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:button_text="@string/my"
+            app:defaultImage="@mipmap/my_default"
+            app:defaultTextColor="@color/color2"
+            app:selectImage="@mipmap/my_select"
+            app:selectTextColor="@color/color1"></com.live.widget.MainButtonView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:background="@color/color3" />
+
+    <com.base.widget.ViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        app:scroll="false"></com.base.widget.ViewPager>
+
+
+</FrameLayout>

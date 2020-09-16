@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MainButtonView">
+        <attr name="defaultTextColor" format="reference"></attr>
+        <attr name="selectTextColor" format="reference"></attr>
+        <attr name="defaultImage" format="reference"></attr>
+        <attr name="selectImage" format="reference"></attr>
+        <attr name="button_text" format="string"></attr>
+    </declare-styleable>
+    <declare-styleable name="RefreshView">
+        <attr name="loadHeight" format="dimension"></attr>
+        <attr name="waveHeight" format="dimension"></attr>
+        <attr name="waveColor" format="reference"></attr>
+        <attr name="headerLayout" format="reference"></attr>
+        <attr name="footerLayout" format="reference"></attr>
+    </declare-styleable>
+</resources>

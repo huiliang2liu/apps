@@ -1,0 +1,172 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:2:1-69:12
+MERGED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:2:1-24:12
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:2:1-39:12
+MERGED from [:libvlc-3.0.13:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/libvlc-3.0.13.aar/191bc8f782409eff2db7d214c0719eaf/AndroidManifest.xml:2:1-11:12
+INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:2:1-69:12
+INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:2:1-69:12
+	package
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:4:5-39
+		INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:2:1-69:12
+		INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:2:1-69:12
+		INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:6:5-81
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:15:5-81
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:6:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:7:5-80
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:16:5-80
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:16:5-80
+	android:name
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:7:22-77
+uses-permission#android.permission.INTERNET
+ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:8:5-66
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:17:5-67
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:17:5-67
+	android:name
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:8:22-64
+uses-permission#android.permission.CAMERA
+ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:9:5-65
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:11:5-65
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:11:5-65
+	android:name
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:9:22-62
+application
+ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:23:5-67:19
+MERGED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:20:5-22:19
+MERGED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:20:5-22:19
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:19:5-37:19
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:19:5-37:19
+	android:supportsRtl
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:22:9-35
+	android:label
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:26:9-41
+	android:icon
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:25:9-36
+	android:allowBackup
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:24:9-35
+	android:theme
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:23:9-73
+	android:name
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:20:9-54
+meta-data#GlobalApplication
+ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:29:9-31:69
+	android:value
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:31:13-66
+	android:name
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:30:13-45
+meta-data#LoadingIcon
+ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:40:9-42:46
+	android:value
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:42:13-43
+	android:name
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:41:13-39
+activity#com.nibiru.studio.TestActivity
+ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:65:9-66:20
+	android:name
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml:65:19-64
+uses-sdk
+INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+MERGED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:7:5-9:41
+MERGED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:7:5-9:41
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:7:5-9:41
+MERGED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:7:5-9:41
+MERGED from [:libvlc-3.0.13:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/libvlc-3.0.13.aar/191bc8f782409eff2db7d214c0719eaf/AndroidManifest.xml:7:5-9:41
+MERGED from [:libvlc-3.0.13:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/libvlc-3.0.13.aar/191bc8f782409eff2db7d214c0719eaf/AndroidManifest.xml:7:5-9:41
+INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+		ADDED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuhuiliang/AndroidStudioProjects/apps/demo_src/src/main/AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH
+ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:11:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:12:22-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:13:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:14:5-81
+	android:name
+		ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:14:22-78
+uses-feature#android.hardware.bluetooth_le
+ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:16:5-18:35
+	android:required
+		ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:18:9-32
+	android:name
+		ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:17:9-53
+service#com.inuker.bluetooth.library.BluetoothService
+ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:21:9-81
+	android:name
+		ADDED from [com.inuker.bluetooth:library:1.4.0] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/2ecb266e40c953978d230a6150499825/AndroidManifest.xml:21:18-78
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:12:5-84
+	android:name
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:12:22-81
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:13:22-76
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:14:5-73
+	android:name
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:14:22-70
+activity#x.core.XBaseXRActivity
+ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:24:9-36:20
+	android:screenOrientation
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:28:13-50
+	android:launchMode
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:27:13-44
+	android:configChanges
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:26:13-119
+	android:name
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:25:13-50
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER+category:name:com.nibiru.intent.category.NVR+category:name:com.nibiru.intent.category.STUDIO
+ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:29:13-35:29
+action#android.intent.action.MAIN
+ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:30:17-69
+	android:name
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:30:25-66
+category#android.intent.category.LAUNCHER
+ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:32:17-77
+	android:name
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:32:27-74
+category#com.nibiru.intent.category.NVR
+ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:33:17-75
+	android:name
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:33:27-72
+category#com.nibiru.intent.category.STUDIO
+ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:34:17-78
+	android:name
+		ADDED from [:nibiru_studio_3_1_15_293:] /Users/liuhuiliang/.gradle/caches/transforms-1/files-1.1/nibiru_studio_3_1_15_293.aar/7aa85fc19b162537839918d2c0691aef/AndroidManifest.xml:34:27-75

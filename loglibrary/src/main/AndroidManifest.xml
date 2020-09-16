@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.log">
+
+    <application>
+        <provider
+            android:name="com.log.LogContentProvider"
+            android:authorities="${applicationId}.log_provider"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.log.LogService"
+            android:process=":log.service" />
+    </application>
+</manifest>
+

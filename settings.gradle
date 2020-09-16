@@ -1,0 +1,6 @@
+include ':greendaotest'
+include ':app', ':plugLibrary', ':ioLibrary', ':baseLibrary', ':httpLibrary', ':imagelibrary', ':medialibriry', ':momoapp', ':p2plibrary', ':imlibrary', ':wifilibrary', ':screenlibrary', ':live', ':dbtext', ':cling', ':float', ':httpservicelibrary', ':eventlibrary', ':tvapplication', ':loglibrary', ':rtsplibrary', ':receiverlibrary', ':threelogin', ':resultlibrary', ':operationlibrary', ':notificationlibrary', ':accessibilitylibrary', ':move', ':customviewlibrary', ':annotationProcess', ':annotation', ':cameralibrary', ':cameratest', ':hook', ':clearxiaoweicache'
+//setBinding(new Binding([gradle:this]))
+//evaluate(new File(
+//        settingsDir.parentFile,"../git/flutter_module/.android/include_flutter.groovy"
+//))

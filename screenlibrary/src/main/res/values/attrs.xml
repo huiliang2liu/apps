@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Screen">
+        <attr name="textStyle" format="string" />
+        <attr name="chinese" format="boolean" />
+    </declare-styleable>
+</resources>

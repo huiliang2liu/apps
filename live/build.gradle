@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+apply from: "../config.gradle"
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+
+    defaultConfig {
+        applicationId "com.live"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 2
+        versionName "2.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        packagingOptions{
+            exclude "META-INF/beans.xml"
+        }
+        compileOptions {
+
+            sourceCompatibility JavaVersion.VERSION_1_8
+
+            targetCompatibility JavaVersion.VERSION_1_8
+
+        }
+        ndk {
+            abiFilters 'armeabi-v7a'    //只生成armv7的so
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file("../lottery-client.jks")
+            storePassword "lottery.com"
+            keyAlias "lottery"
+            keyPassword "lottery.com"
+            v1SigningEnabled true
+            v2SigningEnabled false
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+//    implementation(name:"imagelibrary",ext:"aar")
+//    implementation(name:"baseLibrary-release",ext:"aar")
+    implementation rootProject.ext.butterknife
+    annotationProcessor rootProject.ext.butterknife_compiler
+    annotationProcessor rootProject.ext.logansquare_compile
+    annotationProcessor project(':annotation')
+    implementation rootProject.ext.appcompat
+    implementation rootProject.ext.recyclerview
+    implementation rootProject.ext.cling_core
+    implementation rootProject.ext.cling_support
+    implementation rootProject.ext.eventbus
+    implementation rootProject.ext.logansquare
+//    implementation rootProject.ext.imageloader
+    // Jetty library
+//    implementation 'org.eclipse.jetty:jetty-servlet:9.4.21.v20190926'
+//    implementation 'org.eclipse.jetty:jetty-client:9.4.21.v20190926'
+    implementation rootProject.ext.constraintlayout
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
+    implementation project(':baseLibrary')
+    implementation project(':httpLibrary')
+    implementation project(':imagelibrary')
+    implementation project(':screenlibrary')
+    implementation project(':ioLibrary')
+    implementation project(':float')
+    implementation project(path: ':cling')
+    implementation project(path: ':medialibriry')
+    implementation project(path: ':httpservicelibrary')
+    implementation project(path: ':threelogin')
+    implementation rootProject.ext.weixinLogin
+    implementation rootProject.ext.um_analytics
+    implementation rootProject.ext.um_commom
+    implementation project(path: ':operationlibrary')
+    implementation project(path: ':resultlibrary')
+    implementation project(path: ':notificationlibrary')
+    implementation project(path: ':loglibrary')
+    implementation project(path: ':annotation')
+    implementation 'com.google.firebase:firebase-appindexing:10.0.1'
+    implementation project(path: ':clearxiaoweicache')
+//    implementation project(path: ':accessibilitylibrary')
+
+//    implementation project(':flutter')
+}

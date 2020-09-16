@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="111dp">
+
+    <com.base.widget.ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/holder_hot_list_iv"
+        android:layout_width="140dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        app:roundRx="5dp"
+        app:roundRy="5dp"
+        app:transform="roundTransform" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="161dp"
+        android:layout_marginTop="33dp"
+        android:textSize="18sp"
+        android:textColor="@color/color2"
+        android:id="@+id/holder_hot_list_name"
+        />
+    <TextView
+        android:id="@+id/holder_hot_list_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:textSize="14sp"
+        android:textColor="@color/color3"
+        android:layout_marginLeft="160dp"/>
+    <View
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color11"/>
+
+</FrameLayout>

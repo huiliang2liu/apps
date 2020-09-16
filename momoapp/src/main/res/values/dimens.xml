@@ -1,0 +1,7 @@
+<resources>
+    <!-- ************************* 通用 ******************** -->
+    <dimen name="sp_1">1sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_15">15sp</dimen>
+
+</resources>

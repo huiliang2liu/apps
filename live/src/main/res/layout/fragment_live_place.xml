@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <com.base.widget.RecyclerView
+        android:id="@+id/live_place_place"
+        android:layout_width="110dp"
+        android:layout_height="match_parent"
+        app:direction="vertical"
+        android:layout_marginRight="10dp" />
+
+    <com.base.widget.RecyclerView
+        android:id="@+id/live_place_live"
+        android:layout_width="match_parent"
+        app:direction="vertical"
+        app:lineColor="@color/color11"
+        app:lineHeight="1dp"
+        android:layout_height="match_parent" />
+</LinearLayout>

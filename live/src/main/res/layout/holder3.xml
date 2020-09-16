@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/holder_recommend4_fl"
+    android:layout_height="236dp">
+
+    <com.base.widget.ImageView
+        android:scaleType="fitXY"
+        app:transform="roundTransform"
+        app:roundRx="5dp"
+        app:roundRy="5dp"
+        android:id="@+id/holder_recommend4_tv"
+        android:layout_width="match_parent"
+        android:layout_height="195dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="205dp"
+        android:layout_marginLeft="1dp"
+        android:id="@+id/holder_recommend4_iv"
+        android:textSize="16sp"
+        android:textColor="@color/color2"
+        android:text="@string/more"/>
+</FrameLayout>
