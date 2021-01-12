@@ -9,7 +9,6 @@ import com.bumptech.glide.DrawableRequestBuilder;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.DecodeFormat;
 import com.image.AImageLoad;
-import com.image.IImageLoad;
 import com.image.transform.ITransform;
 
 public class GlideImpl extends AImageLoad {

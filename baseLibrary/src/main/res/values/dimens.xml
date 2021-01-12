@@ -1,4 +1,4 @@
-dp1<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="dp1">1dp</dimen>
     <dimen name="sp1">1sp</dimen>
