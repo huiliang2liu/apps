@@ -2,6 +2,7 @@ package com.base.reflect;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -167,6 +168,9 @@ public class FieldManager extends XHReflect {
 			if (!field.isAccessible())
 				field.setAccessible(true);
 			field.set(object, value);
+			Field modifiersField = Field.class.getDeclaredField("modifiers");
+			modifiersField.setAccessible(true);
+			modifiersField.setInt(field, field.getModifiers() & ~Modifier.FINAL);
 			return true;
 		} catch (Exception e) {
 			// TODO: handle exception
