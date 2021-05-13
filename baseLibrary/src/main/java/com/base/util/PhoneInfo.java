@@ -12,6 +12,7 @@ import android.net.wifi.ScanResult;
 import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
+import android.os.LocaleList;
 import android.provider.Settings.Secure;
 
 import androidx.annotation.NonNull;
@@ -468,8 +469,28 @@ public final class PhoneInfo {
      * @return
      */
     public static String getLanguage() {
+
         return Locale.getDefault().toString();
     }
+
+    /**
+     * 获取用户语言列表
+     * @return
+     */
+    public static String[] getLanguages() {
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.N) {
+            LocaleList localeList = LocaleList.getDefault();
+            if (localeList == null || localeList.size() <= 0)
+                return new String[]{};
+            String[] locales = new String[localeList.size()];
+            for (int i = 0; i < locales.length; i++) {
+                locales[i] = localeList.get(i).toString();
+            }
+        }
+        return new String[]{};
+
+    }
+
 
     /**
      * 获取国家设置
