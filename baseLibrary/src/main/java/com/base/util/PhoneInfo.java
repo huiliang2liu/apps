@@ -1,6 +1,7 @@
 package com.base.util;
 
 import android.Manifest;
+import android.app.ActivityManager;
 import android.app.UiModeManager;
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -16,12 +17,10 @@ import android.os.LocaleList;
 import android.provider.Settings.Secure;
 
 import androidx.annotation.NonNull;
-import androidx.core.content.PermissionChecker;
 
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
 import android.util.Log;
-import android.webkit.WebView;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -475,6 +474,7 @@ public final class PhoneInfo {
 
     /**
      * 获取用户语言列表
+     *
      * @return
      */
     public static String[] getLanguages() {
@@ -1171,7 +1171,6 @@ public final class PhoneInfo {
 
         return arps;
     }
-
 
     public static class ARP {
         public String ip;

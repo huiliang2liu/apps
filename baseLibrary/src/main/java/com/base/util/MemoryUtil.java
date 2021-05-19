@@ -1,5 +1,11 @@
 package com.base.util;
 
+import android.app.ActivityManager;
+import android.content.Context;
+import android.os.Build;
+import android.os.Debug;
+import android.os.Environment;
+import android.os.StatFs;
 import android.util.Log;
 
 import java.io.BufferedReader;
@@ -11,7 +17,7 @@ import java.util.Map;
 import androidx.annotation.NonNull;
 
 public class MemoryUtil {
-//    MemTotal: 所有可用RAM大小（即物理内存减去一些预留位和内核的二进制代码大小）
+    //    MemTotal: 所有可用RAM大小（即物理内存减去一些预留位和内核的二进制代码大小）
 //
 //    MemFree: LowFree与HighFree的总和，被系统留着未使用的内存
 //
@@ -266,5 +272,65 @@ public class MemoryUtil {
         sb.setLength(sb.length() - 1);
         sb.append("}");
         return super.toString();
+    }
+
+    public static Memory getMemory(Context context) {
+        Memory memory = new Memory();
+        ActivityManager manager = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+        if (manager != null) {
+            ActivityManager.MemoryInfo info = new ActivityManager.MemoryInfo();
+            manager.getMemoryInfo(info);
+            memory.availableRam = info.availMem;
+            if (Build.VERSION.SDK_INT > Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1) {
+                memory.totalRam = info.totalMem;
+            } else {
+                memory.totalRam = getInstance().getMemTotal();
+            }
+            memory.usedRam = memory.totalRam - info.availMem;
+            long mem = 0;
+            try {
+                Debug.MemoryInfo[] memInfo = manager.getProcessMemoryInfo(new int[]{android.os.Process.myPid()});
+                if (memInfo.length > 0) {
+                    final int totalPss = memInfo[0].getTotalPss();
+                    mem = totalPss;
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            memory.mUsedRam = mem;
+        }
+        StatFs statFs = new StatFs(Environment.getDataDirectory().getPath());
+        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.JELLY_BEAN_MR1) {
+            long totalCounts = statFs.getBlockCountLong();//总共的block数
+            long availableCounts = statFs.getAvailableBlocksLong(); //获取可用的block数
+            long size = statFs.getBlockSizeLong(); //每格所占的大小，一般是4KB==
+            long availROMSize = availableCounts * size;//可用内部存储大小
+            long totalROMSize = totalCounts * size; //内部存储总大小
+            memory.availableRom = availROMSize;
+            memory.totalRom = totalROMSize;
+        } else {
+            long size = statFs.getBlockSize();
+            long totalCounts = statFs.getBlockCount();
+            long availableCounts = statFs.getAvailableBlocks();
+            long availROMSize = availableCounts * size;//可用内部存储大小
+            long totalROMSize = totalCounts * size; //内部存储总大小
+            memory.availableRom = availROMSize;
+            memory.totalRom = totalROMSize;
+
+        }
+        memory.usedRom = memory.totalRom - memory.availableRom;
+        return memory;
+
+    }
+
+    public static class Memory {
+        public long availableRam;//可用运行内存
+        public long totalRam;//总共运行内存
+        public long usedRam;//已使用的运行内存
+        public long availableRom;//可用存储内存
+        public long totalRom;//总共存储内存
+        public long usedRom;//已使用的存储内存
+        public long mUsedRam;//我是用的运行内存
+
     }
 }

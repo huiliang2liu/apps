@@ -2,6 +2,7 @@ package com.base.widget;
 
 import android.animation.AnimatorSet;
 import android.app.Activity;
+import android.renderscript.RenderScript;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
