@@ -45,6 +45,8 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
 
+import dalvik.system.DexFile;
+
 /**
  * 获取手机信息
  *
@@ -1097,6 +1099,42 @@ public final class PhoneInfo {
             e.printStackTrace();
         }
         return true;
+    }
+
+    public static List<String > getAllClassName(Context context){
+        List<String >classNameList=new ArrayList<>();
+        try {
+
+            DexFile df = new DexFile(context.getPackageCodePath());//通过DexFile查找当前的APK中可执行文件
+            Enumeration<String> enumeration = df.entries();//获取df中的元素  这里包含了所有可执行的类名 该类名包含了包名+类名的方式
+            while (enumeration.hasMoreElements()) {//遍历
+                String className = (String) enumeration.nextElement();
+                if(className.startsWith("com.google"))
+                    continue;
+                if(className.startsWith("okhttp3."))
+                    continue;
+                if(className.startsWith("okio."))
+                    continue;
+                if(className.startsWith("kotlinx."))
+                    continue;
+                if(className.startsWith("kotlin."))
+                    continue;
+                if(className.startsWith("androidx."))
+                    continue;
+                if(className.startsWith("android."))
+                    continue;
+                if(className.startsWith("android.support"))
+                    continue;
+//                if(className.contains("com.google") || className.contains("android.support") || className.contains("javassist.bytecode")
+//                        || className.contains("android")|| className.contains("androidx") || className.contains("com.blankj") || className.contains("javassist") || className.contains("kotlin") || className.contains("$") || className.contains("org.reflections") || className.contains("org.intellij") || className.contains("org.jetbrains")){
+//                    continue;
+//                }
+                classNameList.add(className);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return  classNameList;
     }
 
     /**
