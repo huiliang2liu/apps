@@ -4,11 +4,18 @@ import com.http.http.util.Method;
 
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
+import java.net.CookieHandler;
+import java.net.CookieManager;
+import java.net.CookiePolicy;
+import java.net.HttpCookie;
+import java.net.URI;
 import java.net.URLEncoder;
 import java.security.KeyStore;
 import java.security.cert.X509Certificate;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
@@ -39,9 +46,17 @@ public class Request {
     private String charset = "UTF-8";// 设置编码
     private SSLSocketFactory factory;
     private HostnameVerifier verifier;
-
+    private List<String> hostNames = new ArrayList<>();
     static {
-        defaultHostnameVerifier();
+        CookieManager manager=new CookieManager();
+        manager.setCookiePolicy(new CookiePolicy() {
+            @Override
+            public boolean shouldAccept(URI uri, HttpCookie cookie) {
+//                HttpCookie.domainMatches(cookie.getDomain(),uri.getHost());
+                return true;
+            }
+        });
+        CookieHandler.setDefault(manager);
     }
 
     {
@@ -59,24 +74,18 @@ public class Request {
         head.put("Content-Type", "application/x-www-from-urlencoded");
         head.put("Charset", "utf-8");
         method = Method.GET;
-    }
-
-
-    /**
-     * lhl 2017-11-25 下午3:38:48 说明：设置默认是否忽略证书
-     * <p>
-     * void
-     */
-    private static void defaultHostnameVerifier() {
-        HttpsURLConnection.setDefaultHostnameVerifier(new HostnameVerifier() {
+        verifier = new HostnameVerifier() {
 
             @Override
-            public boolean verify(String arg0, SSLSession arg1) {
+            public boolean verify(String hostName, SSLSession arg1) {
                 // TODO Auto-generated method stub
-                return true;
+                if (hostNames.size() <= 0)
+                    return true;
+                return hostNames.contains(hostName);
             }
-        });
+        };
     }
+
 
     public Method getMethod() {
         return method;
@@ -166,6 +175,13 @@ public class Request {
 
     public HostnameVerifier getVerifier() {
         return verifier;
+    }
+
+    public Request addHostName(String hostName) {
+        if (hostName == null || hostName.isEmpty())
+            return this;
+        hostNames.add(hostName);
+        return this;
     }
 
     public void setVerifier(HostnameVerifier verifier) {

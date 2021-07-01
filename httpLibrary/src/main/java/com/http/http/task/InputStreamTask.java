@@ -10,6 +10,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.net.CookieHandler;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Iterator;
@@ -44,7 +45,7 @@ public class InputStreamTask extends ATask {
             String path = mRequest.getPath();
             HttpURLConnection connection = (HttpURLConnection) new URL(path)
                     .openConnection();
-            if (path.startsWith("https")) {
+            if (connection instanceof HttpsURLConnection) {
                 HttpsURLConnection https = (HttpsURLConnection) connection;
                 HostnameVerifier verifier = mRequest.getVerifier();
                 SSLSocketFactory factory = mRequest.getFactory();
