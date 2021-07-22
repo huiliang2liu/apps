@@ -385,6 +385,7 @@ public class ScreenManager extends FragmentManager.FragmentLifecycleCallbacks im
         activity.requestWindowFeature(Window.FEATURE_NO_TITLE);
         activity.getWindow().setFlags(WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED, WindowManager
                 .LayoutParams.FLAG_HARDWARE_ACCELERATED);
+        activity.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE|WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);//防止弹出软键盘时布局上下移动
         setConfiguration(activity.getResources().getConfiguration(), activity);
         activity.registerComponentCallbacks(new ComponentCallbacks() {
             @Override
