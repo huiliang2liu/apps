@@ -489,6 +489,7 @@ public class ScreenManager extends FragmentManager.FragmentLifecycleCallbacks im
         if (activity instanceof HidNavigation)
             option |= View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
         if (activity instanceof NavigationColor) {
+            option |= View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
             if (Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP_MR1)
                 window.setNavigationBarColor(((NavigationColor) activity).navigationColor());
         }
