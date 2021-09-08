@@ -4,6 +4,7 @@ import android.Manifest;
 import android.app.ActivityManager;
 import android.app.UiModeManager;
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
@@ -14,6 +15,7 @@ import android.net.wifi.WifiInfo;
 import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.LocaleList;
+import android.provider.Settings;
 import android.provider.Settings.Secure;
 
 import androidx.annotation.NonNull;
@@ -249,6 +251,26 @@ public final class PhoneInfo {
         }
 
         return name;
+    }
+
+
+    /**
+     * 判断当前是否是debug模式
+     *
+     * @param context 上下文
+     * @return true或false
+     */
+    public static boolean isApkInDebug(Context context) {
+        try {
+            ApplicationInfo info = context.getApplicationInfo();
+            return (info.flags & ApplicationInfo.FLAG_DEBUGGABLE) != 0;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public static boolean enableAdb(Context context) {
+        return (Settings.Secure.getInt(context.getContentResolver(), Settings.Secure.ADB_ENABLED, 0) > 0);
     }
 
     /**
@@ -1101,29 +1123,29 @@ public final class PhoneInfo {
         return true;
     }
 
-    public static List<String > getAllClassName(Context context){
-        List<String >classNameList=new ArrayList<>();
+    public static List<String> getAllClassName(Context context) {
+        List<String> classNameList = new ArrayList<>();
         try {
 
             DexFile df = new DexFile(context.getPackageCodePath());//通过DexFile查找当前的APK中可执行文件
             Enumeration<String> enumeration = df.entries();//获取df中的元素  这里包含了所有可执行的类名 该类名包含了包名+类名的方式
             while (enumeration.hasMoreElements()) {//遍历
                 String className = (String) enumeration.nextElement();
-                if(className.startsWith("com.google"))
+                if (className.startsWith("com.google"))
                     continue;
-                if(className.startsWith("okhttp3."))
+                if (className.startsWith("okhttp3."))
                     continue;
-                if(className.startsWith("okio."))
+                if (className.startsWith("okio."))
                     continue;
-                if(className.startsWith("kotlinx."))
+                if (className.startsWith("kotlinx."))
                     continue;
-                if(className.startsWith("kotlin."))
+                if (className.startsWith("kotlin."))
                     continue;
-                if(className.startsWith("androidx."))
+                if (className.startsWith("androidx."))
                     continue;
-                if(className.startsWith("android."))
+                if (className.startsWith("android."))
                     continue;
-                if(className.startsWith("android.support"))
+                if (className.startsWith("android.support"))
                     continue;
 //                if(className.contains("com.google") || className.contains("android.support") || className.contains("javassist.bytecode")
 //                        || className.contains("android")|| className.contains("androidx") || className.contains("com.blankj") || className.contains("javassist") || className.contains("kotlin") || className.contains("$") || className.contains("org.reflections") || className.contains("org.intellij") || className.contains("org.jetbrains")){
@@ -1134,7 +1156,7 @@ public final class PhoneInfo {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return  classNameList;
+        return classNameList;
     }
 
     /**
