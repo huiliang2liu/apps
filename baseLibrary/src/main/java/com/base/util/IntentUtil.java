@@ -14,6 +14,42 @@ import androidx.core.content.FileProvider;
 
 import java.io.File;
 import java.util.List;
+/**
+ * Settings.ACTION_ACCESSIBILITY_SETTINGS  跳转系统的辅助功能界面
+ * Settings.ACTION_ADD_ACCOUNT  显示添加帐户创建一个新的帐户屏幕
+ * Settings.ACTION_AIRPLANE_MODE_SETTINGS  飞行模式，无线网和网络设置界面
+ * Settings.ACTION_WIFI_SETTINGS  飞行模式，无线网和网络设置界面
+ * Settings.ACTION_APN_SETTINGS  跳转 APN设置界面
+ * Settings.ACTION_APPLICATION_DETAILS_SETTINGS  根据包名跳转到系统自带的应用程序信息界面
+ * Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS  跳转开发人员选项界面
+ * Settings.ACTION_APPLICATION_SETTINGS  跳转应用程序列表界面
+ * Settings.ACTION_MANAGE_ALL_APPLICATIONS_SETTINGS  跳转到应用程序界面【所有的】
+ * Settings.ACTION_MANAGE_APPLICATIONS_SETTINGS  跳转应用程序列表界面【已安装的】
+ * Settings.ACTION_BLUETOOTH_SETTINGS  跳转系统的蓝牙设置界面
+ * Settings.ACTION_DATA_ROAMING_SETTINGS  跳转到移动网络设置界面
+ * Settings.ACTION_DATA_ROAMING_SETTINGS  跳转日期时间设置界面
+ * Settings.ACTION_DEVICE_INFO_SETTINGS  跳转手机状态界面
+ * Settings.ACTION_DISPLAY_SETTINGS  跳转手机显示界面
+ * Settings.ACTION_INPUT_METHOD_SETTINGS  跳转语言和输入设备
+ * Settings.ACTION_INPUT_METHOD_SUBTYPE_SETTINGS  API 11及以上】  //  跳转 语言选择界面 【多国语言选择】
+ * Settings.ACTION_INTERNAL_STORAGE_SETTINGS  跳转存储设置界面【内部存储】
+ * Settings.ACTION_MEMORY_CARD_SETTINGS  跳转 存储设置 【记忆卡存储】
+ * Settings.ACTION_LOCALE_SETTINGS  跳转语言选择界面【仅有English 和 中文两种选择】
+ * Settings.ACTION_LOCATION_SOURCE_SETTINGS  跳转位置服务界面【管理已安装的应用程序。】
+ * Settings.ACTION_NETWORK_OPERATOR_SETTINGS  跳转到 显示设置选择网络运营商
+ * Settings.ACTION_NFCSHARING_SETTINGS  显示NFC共享设置。 【API 14及以上】
+ * Settings.ACTION_NFC_SETTINGS  显示NFC设置。这显示了用户界面,允许NFC打开或关闭。  【API 16及以上】
+ * Settings.ACTION_PRIVACY_SETTINGS  跳转到备份和重置界面
+ * Settings.ACTION_QUICK_LAUNCH_SETTINGS  跳转快速启动设置界面
+ * Settings.ACTION_SEARCH_SETTINGS  跳转到 搜索设置界面
+ * Settings.ACTION_SECURITY_SETTINGS  跳转到安全设置界面
+ * Settings.ACTION_SETTINGS  跳转到设置界面
+ * Settings.ACTION_SOUND_SETTINGS  跳转到声音设置界面
+ * Settings.ACTION_SYNC_SETTINGS  跳转账户同步界面
+ * Settings.ACTION_USER_DICTIONARY_SETTINGS  跳转用户字典界面
+ * Settings.ACTION_WIFI_IP_SETTINGS  跳转到IP设定界面
+ * Settings.ACTION_WIFI_SETTINGS  跳转Wifi列表设置
+ */
 
 /**
  * 2018/7/30 11:04
